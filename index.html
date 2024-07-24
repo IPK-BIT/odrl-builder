@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ODRL-Builder</title>
+
+		<script type="module" src="/config/basic.config.js"></script>
+		<script type="module" src="/config/explanations.config.js"></script>
+		<script type="module" src="/config/steps.config.js"></script>
+
+		<script type="module" src="/src/main.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', async () => {
+				odrlBuilder.startApp('app', {
+					config: config,
+					prefill: config.prefill,
+					steps: steps,
+					explanations: explanations
+				});
+			});
+		</script>
+
+		<style>
+			html {
+				padding: 0;
+				margin: 0;
+				height: 100vh;
+			}
+
+			body {
+				padding: 0;
+				margin: 0;
+				height: 100vh;
+				font-family: 'Roboto', sans-serif;
+				background: rgb(255, 255, 255);
+			}
+
+			#app {
+				padding: 0;
+				margin: 0;
+				height: 100vh;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app"></div>
+	</body>
+</html>
