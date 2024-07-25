@@ -39,7 +39,7 @@
 <section class="flex justify-center items-center align-middle h-screen">
 	<div class="card bg-base-200 w-1/4 shadow-xl">
 		<div class="card-body items-center text-center">
-			<figure class="px-10">
+			<figure class="p-5 mx-5 bg-white rounded-full">
 				<img id="logo" src="data/logo.png" alt="ODRL Builder Logo" />
 			</figure>
 			<h1 class="text-2xl font-semibold">Welcome to the ODRL Builder</h1>

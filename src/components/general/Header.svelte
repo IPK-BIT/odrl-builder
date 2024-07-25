@@ -33,7 +33,7 @@
 
 <header class="flex flex-row space-x-8 items-center">
 	<div class="flex flex-row items-center">
-		<figure class="px-2 py-1">
+		<figure class=" p-1 m-1 bg-white rounded-full">
 			<img class="h-12 w-12" src="data/logo.png" alt="MIAPPE Wizard" />
 		</figure>
 		<h1 class="font-semibold text-lg">
