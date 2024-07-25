@@ -4,80 +4,52 @@
 
 	function loadMinimal() {
 		$odrlObj = {
-			'@context': 'https://www.w3.org/ns/odrl.jsonld',
-			'@type': 'Policy',
-			permissions: [
+			'@context': 'http://www.w3.org/ns/odrl.jsonld',
+			'@type': 'Set',
+			uid: 'http://example.com/policy:777',
+			permission: [
 				{
-					'@type': 'Permission',
-					action: 'use'
+					target: {
+						'@type': 'Asset',
+						uid: 'http://example.com/looking-glass.ebook'
+					},
+					assigner: {
+						'@type': 'Party',
+						uid: 'http://example.com/org/sony-books'
+					},
+					assignee: {
+						'@type': 'PartyCollection',
+						uid: 'http://example.com/team/A'
+					},
+					action: 'use',
+					constraint: []
 				}
 			],
-			prohibitions: [],
-			duties: []
+			prohibition: [],
+			duty: []
 		};
 	}
 </script>
 
-<header class="flex-container">
-	<div class="flex-items" style="vertical-align: top;">
-		<img src="data/logo.png" alt="MIAPPE Wizard" />
-		<h1>ODRL Builder</h1>
+<header class="flex flex-row space-x-8 items-center">
+	<div class="flex flex-row items-center">
+		<figure class="px-2 py-1">
+			<img class="h-12 w-12" src="data/logo.png" alt="MIAPPE Wizard" />
+		</figure>
+		<h1 class="font-semibold text-lg">
+			<button
+				on:click={() => {
+					$appstate = appstate.INIT;
+				}}>ODRL Builder</button
+			>
+		</h1>
 	</div>
 
-	<div class="flex-items">
+	<div class="space-x-2">
 		{#if $appstate !== appstate.QUESTIONNAIRE}
-			<button class="btn btn-secondary" on:click|preventDefault={loadMinimal}
+			<button class="btn btn-secondary btn-sm" on:click|preventDefault={loadMinimal}
 				>Load Minimal Example</button
 			>
 		{/if}
 	</div>
 </header>
-
-<style>
-	header {
-		color: black;
-		padding: 10px 15px;
-		margin-bottom: 0px;
-	}
-
-	h1 {
-		margin: 7px 0 0 15px;
-		padding: 0;
-		display: inline-block;
-		font-size: 150%;
-		font-weight: 500;
-	}
-
-	img {
-		width: 40px;
-		float: left;
-	}
-
-	.flex-container {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
-		align-items: normal;
-		align-content: normal;
-	}
-
-	.flex-items:nth-child(1) {
-		display: block;
-		flex-grow: 0;
-		flex-shrink: 1;
-		flex-basis: auto;
-		align-self: auto;
-		order: 0;
-		padding-right: 100px;
-	}
-
-	.flex-items:nth-child(2) {
-		display: block;
-		flex-grow: 1;
-		flex-shrink: 1;
-		flex-basis: auto;
-		align-self: center;
-		order: 0;
-	}
-</style>

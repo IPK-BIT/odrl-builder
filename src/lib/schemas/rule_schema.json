@@ -7,8 +7,13 @@
 		"assignee": { "$ref": "party_schema.json#" },
 		"assigner": { "$ref": "party_schema.json#" },
 		"target": { "$ref": "asset_schema.json#" },
-		"action": { "$ref": "action_schema.json#" },
-		"constraint": { "$ref": "constraint_schema.json#" }
+		"action": { "type": "string" },
+		"constraint": {
+			"type": "array",
+			"items": {
+				"$ref": "constraint_schema.json#"
+			}
+		}
 	},
 	"required": ["@type"],
 	"additionalProperties": false

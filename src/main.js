@@ -1,6 +1,6 @@
-import App from './App.svelte';
+import App from '@/App.svelte';
 
-const useShadowDOM = true;
+const useShadowDOM = false;
 
 function startApp(containerId, params) {
 	const _containerId = '#' + containerId;

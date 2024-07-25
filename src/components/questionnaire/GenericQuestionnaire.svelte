@@ -84,16 +84,16 @@
 	let doRerender = 0;
 </script>
 
-<section>
+<section class="p-4 space-y-2">
 	{#if Object.keys($odrlObj).length > 0}
 		{#await forceUpdate(doRerender) then _}
-			<h2 style="margin:0; font-weight: 700; font-size: 1.3em;">
+			<h2 class="font-bold text-xl">
 				Step {currentStep + 1} of {steps.length}
 			</h2>
 
-			<p id="question">{steps[currentStep].title}</p>
+			<p class="font-semibold text-lg">{steps[currentStep].title}</p>
 
-			<div class="input-wrapper">
+			<div class="">
 				<div on:keypress={handleKeypress} role="button" tabindex="0" aria-pressed="false">
 					{#key currentStep}
 						{#if steps[currentStep].text}
@@ -104,10 +104,10 @@
 
 						{#if steps[currentStep].fields}
 							{#each steps[currentStep].fields as field, i}
-								{#if field.isaMapping.jsonPath && !field.isaMapping.commentName}
+								{#if field.odrlMapping.jsonPath && !field.odrlMapping.commentName}
 									<FieldWrapper
 										component={fieldTypes[field.type]}
-										jsonPath={field.isaMapping.jsonPath}
+										jsonPath={field.odrlMapping.jsonPath}
 										{field}
 									/>
 								{/if}
@@ -125,35 +125,19 @@
 				</div>
 			</div>
 
-			<div style="margin-top: 45px; display: flow-root;">
+			<div class="flow-root">
 				{#if currentStep > 0}
-					<button class="btn large" on:click={() => prev()}>Previous</button>
+					<button class="btn btn-secondary float-left" on:click={() => prev()}>Previous</button>
 				{/if}
 
 				{#if currentStep < steps.length - 1}
-					<button class="btn large float-right" on:click={() => next()}>Next</button>
+					<button class="btn btn-primary float-right" on:click={() => next()}>Next</button>
 				{:else}
-					<button class="btn large float-right" on:click={closeQuestionnaire}>Close wizard</button>
+					<button class="btn btn-primary float-right" on:click={closeQuestionnaire}
+						>Close Questionnaire</button
+					>
 				{/if}
 			</div>
 		{/await}
 	{/if}
 </section>
-
-<style>
-	#question {
-		font-weight: 500;
-		font-size: 115%;
-		color: rgb(30, 30, 30);
-		margin-bottom: 40px;
-	}
-
-	.input-wrapper {
-		padding: 0px;
-		border: 0px solid rgb(200, 200, 200);
-	}
-
-	.float-right {
-		float: right;
-	}
-</style>

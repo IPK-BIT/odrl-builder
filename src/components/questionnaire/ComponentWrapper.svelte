@@ -12,12 +12,4 @@
 	}
 </script>
 
-<svelte:component 
-	this={component} 
-	bind:value={$value} 
-	{jsonPath} 
-	{componentConfig} 
-/>
-
-<style>
-</style>
+<svelte:component this={component} bind:value={$value} {jsonPath} {componentConfig} />

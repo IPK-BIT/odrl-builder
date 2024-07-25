@@ -27,20 +27,11 @@
 	}
 </script>
 
-<section>
-	<div class="attr">
+<section class="space-y-2">
+	<div class="space-y-1">
 		{#each rules as rule, index}
-			<Rule
-				on:change
-				on:removeRule={onRemoveRule}
-				bind:rule
-				{componentConfig}
-				{index}
-			/>
+			<Rule on:change on:removeRule={onRemoveRule} bind:rule {componentConfig} {index} />
 		{/each}
 	</div>
-	<button class="btn btn-secondary" on:click={addRule}>Add {label}</button>
+	<button class="btn btn-sm btn-secondary" on:click={addRule}>Add {label}</button>
 </section>
-
-<style>
-</style>

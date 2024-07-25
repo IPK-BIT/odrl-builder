@@ -1,7 +1,6 @@
 import { writable, get } from 'svelte/store';
 import { keyed } from 'svelte-keyed';
 
-
 function createOdrlStoresSynced() {
 	const storeOdrlObj = writable({});
 	const storeOdrlStr = writable('');

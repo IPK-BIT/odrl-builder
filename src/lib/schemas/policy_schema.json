@@ -6,22 +6,22 @@
 		"@context": { "type": "string" },
 		"@type": { "type": "string" },
 		"uid": { "type": "string" },
-		"permissions": {
+		"permission": {
 			"type": "array",
 			"items": {
-				"$ref": "permission_schema.json#"
+				"$ref": "rule_schema.json#"
 			}
 		},
-		"prohibitions": {
+		"prohibition": {
 			"type": "array",
 			"items": {
-				"$ref": "prohibition.json#"
+				"$ref": "rule_schema.json#"
 			}
 		},
-		"duties": {
+		"duty": {
 			"type": "array",
 			"items": {
-				"$ref": "duty_schema.json#"
+				"$ref": "rule_schema.json#"
 			}
 		}
 	},

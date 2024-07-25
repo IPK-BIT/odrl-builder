@@ -17,10 +17,7 @@
 	bind:value={$value}
 	showLabel={true}
 	label={field.label}
-	isaLevel={field.isaMapping.entity}
+	isaLevel={field.odrlMapping.entity}
 	attr={field.explanation}
 	componentConfig={field.componentConfig}
 />
-
-<style>
-</style>

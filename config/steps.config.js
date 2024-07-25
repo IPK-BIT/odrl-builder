@@ -4,9 +4,22 @@ window.steps = [
 		text: ['This tool will help you create ODRL policies.']
 	},
 	{
+		title: 'Provide basic information about the data usage agreement',
+		fields: [
+			{
+				label: 'Identifier',
+				type: 'text',
+				odrlMapping: {
+					jsonPath: 'uid'
+				},
+				explanation: 'DM-1'
+			}
+		]
+	},
+	{
 		title: 'Add permissions to your policy',
 		component: 'Rules',
-		jsonPath: 'permissions',
+		jsonPath: 'permission',
 		componentConfig: {
 			label: 'Permission',
 			explanation: 'DM-3'
@@ -15,7 +28,7 @@ window.steps = [
 	{
 		title: 'Add prohibitions to your policy',
 		component: 'Rules',
-		jsonPath: 'prohibitions',
+		jsonPath: 'prohibition',
 		componentConfig: {
 			label: 'Prohibition'
 		}
@@ -23,7 +36,7 @@ window.steps = [
 	{
 		title: 'Add duties to your policy',
 		component: 'Rules',
-		jsonPath: 'duties',
+		jsonPath: 'duty',
 		componentConfig: {
 			label: 'Duty'
 		}

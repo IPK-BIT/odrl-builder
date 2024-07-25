@@ -24,25 +24,20 @@
 	}
 </script>
 
-<section style="border: 0px solid black;">
-	<div class="attr pure-g v-center">
-		<div class="pure-u-5-24">
-			{#if showLabel}
-				<!-- svelte-ignore a11y-label-has-associated-control -->
-				<label>{label}</label>
-			{/if}
-		</div>
-		<div class="pure-u-19-24">
-			<input
-				style="width: 100%;"
-				class:wide={!showLabel}
-				use:setFocus
-				data-isaLevel={isaLevel}
-				data-attr={attr}
-				type="text"
-				bind:value
-				on:change
-			/>
-		</div>
+<section style="">
+	<div class="">
+		{#if showLabel}
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label class="label font-semibold text-sm underline">{label}</label>
+		{/if}
+		<input
+			class="w-full input input-sm input-bordered"
+			use:setFocus
+			data-isaLevel={isaLevel}
+			data-attr={attr}
+			type="text"
+			bind:value
+			on:change
+		/>
 	</div>
 </section>

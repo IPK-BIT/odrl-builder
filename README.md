@@ -15,11 +15,13 @@ npm install
 ```
 
 ## Start development server
+
 ```
 npm run dev
 ```
 
 ## Build deployable bundle
+
 ```
 npm run build
 ```

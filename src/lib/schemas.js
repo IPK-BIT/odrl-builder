@@ -59,14 +59,14 @@ export default class Schemas {
 
 	static addPrefill(entity, prefill) {
 		if (prefill) {
-            for (let item of prefill) {
-                if (item.type === 'value') {
-                    if (item.odrlMapping.entity === 'policy') {
-                        entity[item.odrlMapping.attribute] = item.value;
-                    } 
-                }
-            }
-        }
-        return entity;
+			for (let item of prefill) {
+				if (item.type === 'value') {
+					if (item.odrlMapping.entity === 'policy') {
+						entity[item.odrlMapping.attribute] = item.value;
+					}
+				}
+			}
+		}
+		return entity;
 	}
 }
