@@ -17,7 +17,22 @@
 	}
 
 	async function loadOdrlFromJson() {
-		$appstate = appstate.QUESTIONNAIRE;
+		let input = document.createElement('input');
+		input.type = 'file';
+		input.accept = '.json,application/json';
+		input.onchange = () => {
+			let fileLoaded = (e) => {
+				let lines = e.target.result;
+				let json = JSON.parse(lines);
+				$odrlObj = json;
+				$appstate = appstate.QUESTIONNAIRE;
+			};
+
+			let fr = new FileReader();
+			fr.onload = fileLoaded;
+			fr.readAsText(input.files[0]);
+		};
+		input.click();
 	}
 </script>
 
@@ -27,7 +42,7 @@
 			<figure class="px-10">
 				<img id="logo" src="data/logo.png" alt="ODRL Builder Logo" />
 			</figure>
-			<h1 class="card-title">Welcome to the ODRL Builder</h1>
+			<h1 class="text-2xl font-semibold">Welcome to the ODRL Builder</h1>
 			<p>A web application to create data usage agreements compliant to ODRL.</p>
 			<button
 				class="btn btn-primary w-full"

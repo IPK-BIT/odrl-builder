@@ -1,4 +1,6 @@
 <script>
+	import { explanationActionFactory } from '@/lib/actions/explanation';
+
 	export let label = '';
 	export let isaLevel = null;
 	export let attr;
@@ -17,6 +19,8 @@
 		isaLevel = getContext('isaLevel');
 	}
 
+	let explanationAction = explanationActionFactory(isaLevel);
+
 	function setFocus(el) {
 		if ($appstate == appstate.QUESTIONNAIRE && focus) {
 			el.focus();
@@ -32,6 +36,7 @@
 		{/if}
 		<input
 			class="w-full input input-sm input-bordered"
+			use:explanationAction
 			use:setFocus
 			data-isaLevel={isaLevel}
 			data-attr={attr}
