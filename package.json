@@ -5,9 +5,11 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build",
+		"build": "vite build --base=/odrl-builder/",
+		"postbuild": "npm run copy",
 		"preview": "vite preview",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"copy": "node ./copy_data_to_dist.cjs"
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
