@@ -8,13 +8,19 @@
 	import InitView from './components/general/InitView.svelte';
 	import { appstate } from '@/stores/appstate';
 	import { questionnaire } from './stores/questionnaire';
-	import { odrlStr } from '@/stores/odrl';
+	import { odrlObj, odrlStr } from '@/stores/odrl';
 	import GenericQuestionnaire from './components/questionnaire/GenericQuestionnaire.svelte';
 	import Header from './components/general/Header.svelte';
 	import SimpleGui from './components/simple-gui/SimpleGui.svelte';
 	import ProgressBar from './components/general/ProgressBar.svelte';
 	import Explanation from './components/general/Explanation.svelte';
+	import Schemas from './lib/schemas';
+	
 	if (config.general?.initialView === 'questionnaire') {
+		if (Object.keys($odrlObj).length == 0) {
+			let emptyPolicy = Schemas.getObjectFromSchema('policy', config.prefill);
+			$odrlObj = emptyPolicy;
+		}
 		$appstate = appstate.QUESTIONNAIRE;
 	}
 
