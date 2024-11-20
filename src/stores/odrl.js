@@ -5,30 +5,30 @@ function createOdrlStoresSynced() {
 	const storeOdrlObj = writable({});
 	const storeOdrlStr = writable('');
 
-	const setIsaObj = (odrlObj) => {
+	const setOdrlObj = (odrlObj) => {
 		storeOdrlObj.set(odrlObj);
 		storeOdrlStr.set(JSON.stringify(odrlObj, null, 2));
 	};
 
-	const updateIsaObj = (odrlObj) => {
+	const updateOdrlObj = (odrlObj) => {
 		storeOdrlObj.update(odrlObj);
 		storeOdrlStr.set(JSON.stringify(get(storeOdrlObj), null, 2));
 	};
 
-	const setIsaStr = (isaStr) => {
-		storeOdrlObj.set(JSON.parse(isaStr));
-		storeOdrlStr.set(isaStr);
+	const setOdrlStr = (odrlStr) => {
+		storeOdrlObj.set(JSON.parse(odrlStr));
+		storeOdrlStr.set(odrlStr);
 	};
 
 	const storesSynced = {
 		odrlObj: {
 			subscribe: storeOdrlObj.subscribe,
-			update: updateIsaObj,
-			set: setIsaObj
+			update: updateOdrlObj,
+			set: setOdrlObj
 		},
 		odrlStr: {
 			subscribe: storeOdrlStr.subscribe,
-			set: setIsaStr
+			set: setOdrlStr
 		}
 	};
 

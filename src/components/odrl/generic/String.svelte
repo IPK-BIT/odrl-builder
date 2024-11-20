@@ -2,7 +2,7 @@
 	import { explanationActionFactory } from '@/lib/actions/explanation';
 
 	export let label = '';
-	export let isaLevel = null;
+	export let odrlLevel = null;
 	export let attr;
 	export let value;
 	export let showLabel = true;
@@ -15,11 +15,11 @@
 	import { appstate } from '@/stores/appstate';
 	import { getContext } from 'svelte';
 
-	if (!isaLevel) {
-		isaLevel = getContext('isaLevel');
+	if (!odrlLevel) {
+		odrlLevel = getContext('odrlLevel');
 	}
 
-	let explanationAction = explanationActionFactory(isaLevel);
+	let explanationAction = explanationActionFactory(odrlLevel);
 
 	function setFocus(el) {
 		if ($appstate == appstate.QUESTIONNAIRE && focus) {
@@ -38,7 +38,7 @@
 			class="w-full input input-sm input-bordered"
 			use:explanationAction
 			use:setFocus
-			data-isaLevel={isaLevel}
+			data-odrlLevel={odrlLevel}
 			data-attr={attr}
 			type="text"
 			bind:value
