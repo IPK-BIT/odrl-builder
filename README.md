@@ -8,6 +8,10 @@ Usually, DUAs are negotiated individually between parties and are not stored in 
 
 In summary, we will simplify the process of creating DUAs by adhering to international standards and will contribute to efforts to harmonize technical solutions, as the EOSC describes ODRL as a core metadata schema for legal interoperability [5]. DUAs can serve as a platform to gain the trust of data owners with protected, sensitive data and thus enable access to such resources. The project is in line with ELIXIR-DE/de.NBI's objective to improve the accessibility of resources and to ensure efficient, interoperable and secure resource sharing. It also aligns with the goals of the NFDI by handling sensitive data and enabling data protection. Especially when dealing with data from the health sector, but also handling agronomic data like land survey data or data from breeding programs.The project is a joint activity of the Leibniz IPK in Gatersleben (ELIXIR-DE/de.NBI Service Center GCBN), and the Justus-Liebig-University Giessen (ELIXIR-DE/de.NBI Service Center BiGi) and contributes to NFDI4Biodiversity, FAIRAgro, NFDI4Microbiota, DataPlant and FAIR-DS as well as to European initiatives such as EOSC and Gaia-X.
 
+## Tutorial
+
+You can find a tutorial for onboarding on the UI, the configuration and the code base here: https://github.com/feserm/odrl-wizard-tutorial 
+
 ## Installation
 
 ```
