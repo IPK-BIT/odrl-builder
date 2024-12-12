@@ -6,6 +6,9 @@
 		"@context": { "type": "string" },
 		"@type": { "type": "string" },
 		"uid": { "type": "string" },
+		"assignee": { "$ref": "party_schema.json#" },
+		"assigner": { "$ref": "party_schema.json#" },
+		"target": { "$ref": "asset_schema.json#" },
 		"permission": {
 			"type": "array",
 			"items": {
@@ -18,7 +21,7 @@
 				"$ref": "rule_schema.json#"
 			}
 		},
-		"duty": {
+		"obligation": {
 			"type": "array",
 			"items": {
 				"$ref": "rule_schema.json#"

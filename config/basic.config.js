@@ -1,8 +1,14 @@
 window.config = {
 	general: {
 		layoutMode: 'standalone', // 'standalone', 'plugin'
-		initialView: 'init', // 'init', 'questionnaire', 'form', 'gui'
-		showProgressBar: true
+		initialView: 'questionnaire', // 'init', 'questionnaire', 'form', 'gui'
+		showProgressBar: true,
+		showSelectionDefaults: true,
+		persistance: {
+			// pdf: 'https://aruna-engine.org/',
+			// roc: 'https://git.nfdi4plants.org/',
+			// repo: 'https://aruna-engine.org/'
+		}
 	},
 
 	prefill: [
@@ -21,6 +27,17 @@ window.config = {
 				attribute: '@type'
 			},
 			value: 'Set'
+		},
+		{
+			type: 'object',
+			odrlMapping: {
+				entity: 'policy',
+				attribute: 'assigner'
+			},
+			value: {
+				'@type': 'Party',
+				'uid': '',
+			}
 		}
 	],
 

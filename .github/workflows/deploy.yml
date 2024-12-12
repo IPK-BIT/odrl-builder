@@ -2,7 +2,7 @@ name: Deploy Svelte app to Github Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
 
   workflow_dispatch:
 
@@ -14,11 +14,11 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 env:
-  BUILD_PATH: "." # default value when not using subfolders
+  BUILD_PATH: '.' # default value when not using subfolders
   # BUILD_PATH: subfolder
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: '16'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
       - name: Setup Pages
@@ -49,11 +49,11 @@ jobs:
       - name: List artifact files
         run: ls -la
         working-directory: ${{ env.BUILD_PATH }}/dist
-#      - name: Copy data files from repo to dist dir
-#        run: |
-#          mkdir ./dist/data
-#          cp -R ./data/* ./dist/data/
-#        working-directory: ${{ env.BUILD_PATH }}
+      #      - name: Copy data files from repo to dist dir
+      #        run: |
+      #          mkdir ./dist/data
+      #          cp -R ./data/* ./dist/data/
+      #        working-directory: ${{ env.BUILD_PATH }}
       - name: List artifact files
         run: ls -la
         working-directory: ${{ env.BUILD_PATH }}/dist
