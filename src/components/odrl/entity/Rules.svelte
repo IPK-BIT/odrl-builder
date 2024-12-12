@@ -8,6 +8,8 @@
 	export let label = 'Rule';
 	export let jsonPath = '';
 
+	import { odrlObj } from '@/stores/odrl';
+
 	if (componentConfig.label) {
 		label = componentConfig.label;
 	}

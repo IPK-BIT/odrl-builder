@@ -4,9 +4,6 @@
 	"type": "object",
 	"properties": {
 		"@type": { "type": "string" },
-		"assignee": { "$ref": "party_schema.json#" },
-		"assigner": { "$ref": "party_schema.json#" },
-		"target": { "$ref": "asset_schema.json#" },
 		"action": { "type": "string" },
 		"constraint": {
 			"type": "array",

@@ -1,0 +1,48 @@
+[
+	{
+		"key": "cc:Reproduction",
+		"clause": "",
+		"permission": "The data user is allowed to reproduce the Licensed Material, in whole or in part.",
+		"prohibition": "The data user is not allowed to reproduce the Licensed Material, in whole or in part."
+	},{
+		"key": "cc:Distribution",
+		"clause": "",
+		"permission": "You are allowed to share the Licensed Material, in whole or in part.",
+		"prohibition": "You are not allowed to share the Licensed Material, in whole or in part."
+	},{
+		"key": "cc:DerivativeWorks",
+		"clause": "",
+		"permission": "For the avoidance of doubt, You do have permission under this Public License to Share Adapted Material.",
+		"prohibition": "For the avoidance of doubt, You do not have permission under this Public License to Share Adapted Material."
+	},{
+		"key": "cc:Notice",
+		"clause": "",
+		"obligation": "If You Share the Licensed Material (including in modified form), You must:<br> retain the following if it is supplied by the Licensor with the Licensed Material:<br> a copyright notice;<br> a notice that refers to this Public License;<br> a notice that refers to the disclaimer of warranties;<br> a URI or hyperlink to the Licensed Material to the extent reasonably practicable;<br> indicate if You modified the Licensed Material and retain an indication of any previous modifications; and<br> indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.<br> You may satisfy the conditions in this section in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License."
+	},{
+		"key": "o-dd:attribution",
+		"clause": "",
+		"obligation": "If You Share the Licensed Material (including in modified form), You must:<br> retain the following if it is supplied by the Licensor with the Licensed Material:<br> identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);<br> a copyright notice;<br> a notice that refers to this Public License;<br> a notice that refers to the disclaimer of warranties;<br> a URI or hyperlink to the Licensed Material to the extent reasonably practicable;<br> indicate if You modified the Licensed Material and retain an indication of any previous modifications; and<br> indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.<br><br> You may satisfy the conditions in Section 3(a)(1) in this section in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.<br> If requested by the Licensor, You must remove any of the information required for the Attribution by Section 3(a)(1)(A) to the extent reasonably practicable.<br> If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.<br><br> Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:<br> for the avoidance of doubt, this license grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;<br> if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and<br> You must comply with this conditions if You Share all or a substantial portion of the contents of the database.<br> For the avoidance of doubt, this Section  supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.<br> If requested by the Licensor, You must remove any of the information required for the Attribution to the extent reasonably practicable. You may satisfy the conditions in this section in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information."
+	},{
+		"key": "odrl:CommercialUse",
+		"clause": "",
+		"permission": "You may reproduce and share the licensed material, in whole or in part for commercial purposes. You may also produce, reproduce, and share adapted material for commercial purposes. You may also extract, reuse, reproduce and share all or a substantial portion of the contents of the database for commercial purposes.",
+		"prohibition": "You may not reproduce and share the licensed material, in whole or in part for commercial purposes. You may also not produce, reproduce, and share adapted material for commercial purposes. You may also not extract, reuse, reproduce and share all or a substantial portion of the contents of the database for commercial purposes.",
+		"definitions": [
+			"NonCommercial means not primarily intended for or directed towards commercial advantage or monetary compensation. For purposes of this Public License, the exchange of the Licensed Material for other material subject to Copyright and Similar Rights by digital file-sharing or similar means is NonCommercial provided there is no payment of monetary compensation in connection with the exchange."
+		]
+	},{
+		"key": "cc:ShareAlike",
+		"clause": "",
+		"obligation": "The Adapter's License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.<br> You must include the text of, or the URI or hyperlink to, the Adapter's License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.<br> You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter's License You apply.",
+		"prohibition": "",
+		"definitions": [
+			"BY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.",
+			"License Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike."
+		]
+	},{
+		"key": "tdm:mine",
+		"clause": "",
+		"permission": "The use of the Licensed Material for text and data mining is allowed.",
+		"prohibition": "The use of the Licensed Material for text and data mining is not allowed."
+	}
+]
