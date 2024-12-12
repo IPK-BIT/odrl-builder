@@ -131,7 +131,7 @@
 }) || $odrlObj.prohibition.find((r) => {
 		return r.action === componentConfig.item;
 	}) || config.general.showSelectionDefaults}
-	<p class="italic p-2 my-2 bg-neutral-50 rounded-lg">
+	<p class="italic p-2 my-2 bg-base-300 rounded-lg">
 		{#if $odrlObj.permission.find((r) => {
 			return r.action === componentConfig.item;
 		})}

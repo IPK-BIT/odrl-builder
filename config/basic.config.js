@@ -5,7 +5,7 @@ window.config = {
 		showProgressBar: true,
 		showSelectionDefaults: true,
 		persistance: {
-			// pdf: 'https://aruna-engine.org/',
+			pdf: 'https://odrl.gi.denbi.de/',
 			// roc: 'https://git.nfdi4plants.org/',
 			// repo: 'https://aruna-engine.org/'
 		}
