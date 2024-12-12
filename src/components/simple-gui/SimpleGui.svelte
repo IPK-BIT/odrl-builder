@@ -31,19 +31,19 @@
 			<td class="space-y-1">
 				{#each $odrlObj.permission as permission}
 					<table class="table bg-base-200">
-						{#if permission.assigner.uid}
+						{#if permission.assigner && permission.assigner.uid}
 							<tr>
 								<th class="w-1/5">Assigner</th>
 								<td>{permission.assigner.uid}</td>
 							</tr>
 						{/if}
-						{#if permission.assignee.uid}
+						{#if permission.assignee && permission.assignee.uid}
 							<tr>
 								<th class="w-1/5">Assignee</th>
 								<td>{permission.assignee.uid}</td>
 							</tr>
 						{/if}
-						{#if permission.target.uid}
+						{#if permission.target && permission.target.uid}
 							<tr>
 								<th class="w-1/5">Target</th>
 								<td>{permission.target.uid}</td>
@@ -62,19 +62,19 @@
 			<td class="space-y-1">
 				{#each $odrlObj.prohibition as prohibition}
 					<table class="table bg-base-200">
-						{#if prohibition.assigner.uid}
+						{#if prohibition.assigner && prohibition.assigner.uid}
 							<tr>
 								<th class="w-1/5">Assigner</th>
 								<td>{prohibition.assigner.uid}</td>
 							</tr>
 						{/if}
-						{#if prohibition.assignee.uid}
+						{#if prohibition.assignee && prohibition.assignee.uid}
 							<tr>
 								<th class="w-1/5">Assignee</th>
 								<td>{prohibition.assignee.uid}</td>
 							</tr>
 						{/if}
-						{#if prohibition.target.uid}
+						{#if prohibition.target && prohibition.target.uid}
 							<tr>
 								<th class="w-1/5">Target</th>
 								<td>{prohibition.target.uid}</td>
@@ -99,13 +99,13 @@
 								<td>{duty.assigner.uid}</td>
 							</tr>
 						{/if}
-						{#if duty.assignee.uid}
+						{#if duty.assignee && duty.assignee.uid}
 							<tr>
 								<th class="w-1/5">Assignee</th>
 								<td>{duty.assignee.uid}</td>
 							</tr>
 						{/if}
-						{#if duty.target.uid}
+						{#if duty.target && duty.target.uid}
 							<tr>
 								<th class="w-1/5">Target</th>
 								<td>{duty.target.uid}</td>
