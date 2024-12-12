@@ -1,7 +1,7 @@
 window.config = {
 	general: {
 		layoutMode: 'standalone', // 'standalone', 'plugin'
-		initialView: 'questionnaire', // 'init', 'questionnaire', 'form', 'gui'
+		initialView: 'init', // 'init', 'questionnaire', 'form', 'gui'
 		showProgressBar: true,
 		showSelectionDefaults: true,
 		persistance: {
