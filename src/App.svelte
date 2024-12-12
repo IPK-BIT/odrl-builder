@@ -64,9 +64,9 @@
 				<Header />
 			</div>
 		{/if}
-		<div class="flex flex-row">
+		<div class="flex flex-col md:flex-row">
 			{#if config.general.layoutMode === 'standalone'}
-				<div class="w-1/5 ml-2 h-full min-h-[200px]">
+				<div class="w-full md:w-1/5 md:ml-2 h-full md:min-h-[200px]">
 					{#if $appstate !== appstate.QUESTIONNAIRE && $appstate !== appstate.GUI}
 						<div class="shadow-xl rounded-md p-2">
 							<!-- svelte-ignore a11y-invalid-attribute -->
@@ -90,8 +90,8 @@
 
 			<div
 				class="h-full shadow-xl rounded-lg {config.general.layoutMode === 'standalone'
-					? 'w-3/5 mx-4'
-					: 'w-full'}"
+					? 'md:w-3/5 md:mx-4'
+					: 'w-full'} w-full"
 			>
 				<div class="">
 					{#if $appstate === appstate.FORM}
@@ -109,7 +109,7 @@
 			</div>
 
 			{#if config.general.layoutMode === 'standalone'}
-				<div class="w-1/5 mr-2">
+				<div class="w-full md:w-1/5 md:mr-2">
 					<Explanation />
 					{#if $appstate !== appstate.QUESTIONNAIRE || true == true}
 						<div class="shadow-lg p-4 rounded-lg">

@@ -39,7 +39,7 @@
 
 <div class="tabs tabs-boxed">
 	<button
-		class="tab"
+		class="tab h-full"
 		class:tab-active={$odrlObj.obligation.find((r) => {
 			return r.action === componentConfig.item;
 		})}
@@ -48,7 +48,7 @@
 		}}>Require {noun}</button
 	>
 	<button
-		class="tab"
+		class="tab h-full"
 		class:tab-active={!$odrlObj.obligation.find((r) => {
 			return r.action === componentConfig.item;
 		})}

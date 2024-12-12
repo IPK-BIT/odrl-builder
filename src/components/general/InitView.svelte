@@ -36,8 +36,8 @@
 	}
 </script>
 
-<section class="flex justify-center items-center align-middle h-screen">
-	<div class="card bg-base-200 w-1/4 shadow-xl">
+<section class="flex justify-center items-center align-middle h-screen p-4">
+	<div class="card bg-base-200 w-full md:w-1/2 lg:w-1/4 shadow-xl">
 		<div class="card-body items-center text-center">
 			<figure class="p-5 mx-5 bg-white rounded-full">
 				<img id="logo" src="data/logo.png" alt="ODRL Builder Logo" />

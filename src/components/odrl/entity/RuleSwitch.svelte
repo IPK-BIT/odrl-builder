@@ -74,7 +74,7 @@
 		class:tab-active={$odrlObj.permission.find((r) => {
 			return r.action === componentConfig.item;
 		})}
-		class="tab"
+		class="tab h-full"
 		on:click={() => {
 			setRule('permission');
 		}}>Permit {noun}</button
@@ -83,7 +83,7 @@
 		class:tab-active={$odrlObj.prohibition.find((r) => {
 			return r.action === componentConfig.item;
 		})}
-		class="tab"
+		class="tab h-full"
 		on:click={() => {
 			setRule('prohibition');
 		}}>Prohibit {noun}</button
@@ -97,7 +97,7 @@
 				return r.action === componentConfig.item;
 			})
 		)}
-		class="tab"
+		class="tab h-full"
 		on:click={() => {
 			setRule('reset');
 		}}>I don't care</button

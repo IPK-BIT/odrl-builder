@@ -13,7 +13,30 @@
 	}
 
 	function downloadPDF() {
-		console.log('not implemented');
+		const downloadAnchorNode = document.createElement('a');
+		// Send POST Request to render api
+		fetch(config.general.persistance.pdf+"/api/render", {
+           	method: "POST",
+ 			body: JSON.stringify($odrlObj),
+  			headers: {
+				"Content-type": "application/json"
+  			}
+		})
+		// Return rendered pdf to user
+		.then((response) => response.blob())
+  		.then(
+			(blob) => {
+				console.log('pdf created');
+				
+				const blob_url = window.URL.createObjectURL(blob);
+				downloadAnchorNode.setAttribute('href', blob_url);
+				downloadAnchorNode.setAttribute('download', 'odrl.pdf');
+				document.body.appendChild(downloadAnchorNode);
+				downloadAnchorNode.click();
+				downloadAnchorNode.remove();
+		
+			}
+		);
 	}
 </script>
 
