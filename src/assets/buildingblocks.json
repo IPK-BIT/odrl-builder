@@ -1,0 +1,125 @@
+{
+	"clauses": [
+		{
+			"key": "cc:Reproduction",
+			"clause": "Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to reproduce the Licensed Material, in whole or in part.",
+			"required": "false",
+			"type": "permission"
+		},
+		{
+			"key": "cc:Distribution",
+			"clause": "Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to Share the Licensed Material, in whole or in part.",
+			"required": "false",
+			"type": "permission"
+		},
+		{
+			"key": "cc:DerivativeWorks",
+			"clause": "You are allowed to Share Adapted Material under this Public License",
+			"required": "false",
+			"type": "permission"
+		},
+		{
+			"key": "cc:attribution",
+			"clause": "If You Share the Licensed Material (including in modified form), You must:\n retain the following if it is supplied by the Licensor with the Licensed Material:\n identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\n a copyright notice;\n a notice that refers to this Public License;\n a notice that refers to the disclaimer of warranties;\n a URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\n indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\n You may satisfy the conditions in Section 3(a)(1) in this section in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\n If requested by the Licensor, You must remove any of the information required for the Attribution by Section 3(a)(1)(A) to the extent reasonably practicable.\n If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.\n\n Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n for the avoidance of doubt, this license grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\n if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and\n You must comply with this conditions if You Share all or a substantial portion of the contents of the database.\n For the avoidance of doubt, this Section  supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n If requested by the Licensor, You must remove any of the information required for the Attribution to the extent reasonably practicable. You may satisfy the conditions in this section in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.",
+			"required": "false",
+			"type": "duty"
+		},
+		{
+			"key": "cc:CommercialUse",
+			"clause": "You may reproduce and share the licensed material, in whole or in part only for NonCommercial purposes. You may also produce, reproduce, and share adapted material only for NonCommercial purposes. You may extract, reuse, reproduce and share all or a substantial portion of the contents of the database only for NonCommercial purposes.",
+			"definitions": [
+				"NonCommercial means primarily intended for or directed towards commercial advantage or monetary compensation. For purposes of this Public License, the exchange of the Licensed Material for other material subject to Copyright and Similar Rights by digital file-sharing or similar means is commercial provided there is payment of monetary compensation in connection with the exchange."
+			],
+			"required": "false",
+			"type": "prohibition"
+		},
+		{
+			"key": "cc:ShareAlike",
+			"clause": "The Adapter's License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\n You must include the text of, or the URI or hyperlink to, the Adapter's License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\n You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter's License You apply.",
+			"definitions": [
+				"BY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.",
+				"License Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike."
+			],
+			"required": "false",
+			"type": "duty"
+		},
+		{
+			"key": "tdm:mine",
+			"clause": "The use of the Licensed Material for text and data mining is not allowed.",
+			"required": "false",
+			"type": "prohibition"
+		},
+		{
+			"key": "purpose:research",
+			"clause": "Usage of the Licensed Material is limited to research purposes as defined in Art. 3 (1) Directive 2019/790.",
+			"required": "false",
+			"type": "prohibition"
+		},
+		{
+			"key": "enterprise:small",
+			"clause": "The permissions of this license shall only apply to microenterprises or a small enterprises, provided that that enterprise does not have a partner enterprise or a linked enterprise within the meaning of Article 3 of the Annex to Recommendation 2003/361/EC that does not qualify as a microenterprise or a small enterprise and where the microenterprise and small enterprise is not subcontracted to manufacture or design a connected product or to provide a related service. The same shall apply to an enterprise that has qualified as a medium-sized enterprise under Article 2 of the Annex to Recommendation 2003/361/EC.",
+			"required": "false",
+			"type": "prohibition"
+		},
+		{
+			"key": "enterprise:medium",
+			"clause": "The permissions of this license shall only apply to medium-sized enterprises, provided that that enterprise does not have a partner enterprise or a linked enterprise within the meaning of Article 2 of the Annex to Recommendation 2003/361/EC that does not qualify as a medium-sized and where medium-sized is not subcontracted to manufacture or design a connected product or to provide a related service.",
+			"required": "false",
+			"type": "prohibition"
+		},
+		{
+			"key": "spatial",
+			"clause": "This license is limited to users in the area of ...",
+			"required": "false",
+			"type": "prohibition"
+		},
+		{
+			"key": "EmbargoDate",
+			"clause": "The Licensed Material cannot be reproduced or shared before ...",
+			"required": "false",
+			"type": "prohibition"
+		},
+		{
+			"key": "cc:Notice",
+			"clause": "If You Share the Licensed Material (including in modified form), You must:\n retain the following if it is supplied by the Licensor with the Licensed Material:\n a copyright notice;\n a notice that refers to this Public License;\n a notice that refers to the disclaimer of warranties;\n a URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\n indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n You may satisfy the conditions in this section in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information. If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.",
+			"required": "false",
+			"type": "duty"
+		},
+		{
+			"key": "LiabilityWaiver",
+			"clause": "Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\n To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\n The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.",
+			"required": "false",
+			"type": "prohibition"
+		},
+		{
+			"key": "Interpretation",
+			"clause": "For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\n To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\n No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\n Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.",
+			"required": "true",
+			"type": ""
+		},
+		{
+			"key": "TermAndTermination",
+			"clause": "This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\n Where Your right to use the Licensed Material has terminated under the previous Section it reinstates:\n automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\n upon express reinstatement by the Licensor.\n For the avoidance of doubt, this Section does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\n For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License\n Clauses on the definitions, liability, term and termination, additional or parallel licenses, and interpretation survive termination of this Public License.",
+			"required": "true",
+			"type": ""
+		},
+		{
+			"key": "BaseDefinitions",
+			"definitions": [
+				"Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.",
+				"Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.",
+				"Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized.",
+				"Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.",
+				"Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.",
+				"Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.",
+				"Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.",
+				"Licensor means the individual(s) or entity(ies) granting rights under this Public License.",
+				"Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.",
+				"Sui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.",
+				"You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning."
+			],
+			"required": "true",
+			"type": ""
+		}
+	]
+}
