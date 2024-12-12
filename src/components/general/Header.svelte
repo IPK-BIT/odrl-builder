@@ -21,12 +21,12 @@
 						'@type': 'PartyCollection',
 						uid: 'http://example.com/team/A'
 					},
-					action: 'use',
+					action: 'http://www.w3.org/ns/odrl/2/use',
 					constraint: []
 				}
 			],
 			prohibition: [],
-			duty: []
+			obligation: []
 		};
 	}
 </script>
@@ -46,10 +46,10 @@
 	</div>
 
 	<div class="space-x-2">
-		{#if $appstate !== appstate.QUESTIONNAIRE}
-			<button class="btn btn-secondary btn-sm" on:click|preventDefault={loadMinimal}
-				>Load Minimal Example</button
-			>
-		{/if}
+		<!-- {#if $appstate !== appstate.QUESTIONNAIRE} -->
+		<button class="btn btn-secondary btn-sm" on:click|preventDefault={loadMinimal}
+			>Load Minimal Example</button
+		>
+		<!-- {/if} -->
 	</div>
 </header>

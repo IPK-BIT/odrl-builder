@@ -13,6 +13,8 @@
 	import Party from '../odrl/entity/Party.svelte';
 	import FieldWrapper from './FieldWrapper.svelte';
 	import Rules from '../odrl/entity/Rules.svelte';
+	import RuleSwitch from '../odrl/entity/RuleSwitch.svelte';
+	import Duty from '../odrl/entity/Duty.svelte';
 
 	let steps = config.steps;
 
@@ -32,7 +34,9 @@
 
 	const components = {
 		Party: Party,
-		Rules: Rules
+		Rules: Rules,
+		RuleSwitch: RuleSwitch,
+		Duty: Duty
 	};
 
 	function addPermission() {

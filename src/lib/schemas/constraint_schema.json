@@ -4,8 +4,9 @@
 	"type": "object",
 	"properties": {
 		"@type": { "type": "string" },
+		"leftOperand": { "type": "string" },
 		"operator": { "type": "string" },
-		"rightOperand": { "type": ["string", "number", "boolean"] }
+		"rightOperand": { "type": "string" }
 	},
 	"required": ["@type"],
 	"additionalProperties": false
