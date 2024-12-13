@@ -58,7 +58,7 @@
 	>
 </div>
 
-<!-- {#if $odrlObj.obligation.find((r) => {
+{#if $odrlObj.obligation.find((r) => {
 	return r.action === componentConfig.item;
 })}
 	<Constraints
@@ -67,7 +67,7 @@
 		})}
 		{componentConfig}
 	/>
-{/if} -->
+{/if}
 
 {#if $odrlObj.obligation.find((r) => {
 	return r.action === componentConfig.item;

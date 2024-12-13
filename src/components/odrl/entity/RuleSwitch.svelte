@@ -104,7 +104,7 @@
 	>
 </div>
 
-<!-- {#if $odrlObj.permission.find((r) => {
+{#if $odrlObj.permission.find((r) => {
 	return r.action === componentConfig.item;
 })}
 	<Constraints
@@ -124,7 +124,7 @@
 		})}
 		{componentConfig}
 	/>
-{/if} -->
+{/if}
 
 {#if $odrlObj.permission.find((r) => {
 	return r.action === componentConfig.item;
