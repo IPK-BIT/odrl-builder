@@ -54,6 +54,7 @@
 			<button class="btn btn-primary w-full" on:click|preventDefault={() => loadOdrlFromJson()}
 				>Load ODRL from File</button
 			>
+			<p class="mt-2 text-xs">Build with ❤️ by <a class="link" target="_blank" href="https://github.com/IPK-BIT/odrl-builder">ODRL-Builder</a></p>
 		</div>
 	</div>
 </section>

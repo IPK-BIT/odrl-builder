@@ -1,6 +1,6 @@
 services:
   web:
-    build: .
+    image: quay.io/feserm/odrl-builder:latest
     restart: unless-stopped
     ports:
       - 3173:80
